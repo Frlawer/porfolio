@@ -1,0 +1,21 @@
+---
+import Button from "./Button.astro";
+import SocialPill from "./SocialPill.astro";
+import WhatsappIcon from "./icons/WhatsappIcon.astro";
+---
+<header class="flex justify-evenly items-center py-4 w-screen mx-auto">
+
+    <img class="size-14 bg-white rounded-full bg-clip-padding p-px" src="/Logo-Frlawer.png" alt="">
+
+    <nav class="flex flex-row gap-x-10">
+        <a href="/">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <SocialPill>
+        <WhatsappIcon class="size-5 text-white/90" />
+        Escribíme
+    </SocialPill>
+</header>

@@ -1,0 +1,33 @@
+---
+import ExperienceItem from "../components/ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Febrero 2023",
+    title: "Desarrollo web HTML, CSS, Javascript",
+    company: "La Bajada del Cacique",
+    link: "https://www.labajadadelcacique.com.ar/",
+    description:
+      "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
+  },
+  {
+    date: "Agosto 2020",
+    title: "Desarrollo Frontend",
+    company: "Gatti Electrónica",
+    link: "https://www.gattielectronica.com.ar/",
+    description:
+      "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
+  },
+];
+
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-8">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
