@@ -1,50 +1,36 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import ImageFront from "../components/ImageFront.astro";
-import GithubIcon from "../components/icons/Github.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import EmailIcon from "../components/icons/Email.astro";
-import SocialPill from "../components/SocialPill.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import Design from "../components/Design.astro";
+import Presentacion from "../components/Presentacion.astro";
+import Tecnologies from "../components/Tecnologies.astro";
+import Galeria from "../components/Galeria.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Fran">
-    <main>
-        <SectionContainer>
-            <ImageFront class="rounded-full size-44 mx-auto" />
+  <main>
+    <SectionContainer>
+      <Presentacion />
+    </SectionContainer>
 
-            <h1 class="bg-gradient-to-r from-violet-600 to-red-500 bg-clip-text text-transparent text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10">
-                Hey, soy Francisco <a href="https://linkedin.com/in/frandir" target="_blank" rel="noopener" class="flex justify-center items-center">
-                    <Badge>Disponible para trabajar</Badge>
-                </a>
-            </h1>
-            <h2 class="text-2xl opacity-80 text-wrap">
-                <span>+10 años de experiencia como freelance.</span>
-                <span class="text-yellow-200/90">Desarrollador web.</span>
-                <span class="text-red-200/90">Catamarqueño en Neuquén, Argentina.</span>
-                <span class="opacity-75">Preparado para asesorar empresas en soluciones rápidas.</span>
-            </h2>
+    <SectionContainer class="bg-neutral-950">
+      <Design />
+    </SectionContainer>
 
-            <nav class="flex gap-x-4 mt-8 justify-center">
-                <SocialPill href="https://github.com/frlawer">
-                    <GithubIcon class="size-8" />
-						Github
-                </SocialPill>
-                <SocialPill href="https:/linkedin.com/in/frandir">
-                    <LinkedInIcon class="size-8" />
-						LinkedIn
-                </SocialPill>
-				<SocialPill>
-					<EmailIcon class="size-8" />
-					frlawer@gmail.com
-				</SocialPill>
-            </nav>
-        </SectionContainer>
+    <SectionContainer>
+      <Experience />
+    </SectionContainer>
 
-        <SectionContainer>
-            <Experience />
-        </SectionContainer>
-    </main>
+    <SectionContainer class="bg-neutral-950">
+      <Tecnologies />
+    </SectionContainer>
+    
+    <SectionContainer>
+      <Galeria />
+    </SectionContainer>
+    
+    <Footer />
+  </main>
 </Layout>

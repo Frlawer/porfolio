@@ -3,12 +3,22 @@ import ExperienceItem from "../components/ExperienceItem.astro";
 
 const EXPERIENCE = [
   {
+    date: "Agosto 2023",
+    title: "Desarrollo ReactJS, Laravel, TailwindCSS",
+    company: "Unco Activa",
+    link: "https://github.com/Unco-Activa/Unco-Activa",
+    description:
+    "Desarrollo de aplicacion web con ReactJS para el frontend, creación de componentes para registro de los participantes con pago a través de boton de Mercado Pago, HTML, CSS, TailwindCSS, Material UI, Git,  entre otras tecnologías.",
+    img:"/uncoactiva.webp",
+  },
+  {
     date: "Febrero 2023",
     title: "Desarrollo web HTML, CSS, Javascript",
     company: "La Bajada del Cacique",
     link: "https://www.labajadadelcacique.com.ar/",
     description:
-      "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
+    "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
+    img:"/labajadadelcacique.webp",
   },
   {
     date: "Agosto 2020",
@@ -16,17 +26,30 @@ const EXPERIENCE = [
     company: "Gatti Electrónica",
     link: "https://www.gattielectronica.com.ar/",
     description:
-      "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
+    "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
+    img:"/gattielectronica.webp",
+  },
+  {
+    date: "Diciembre 2018",
+    title: "Desarrollo Fullstack | PHP plano, HTML, CSS, Javascript (Jquery), Mysql",
+    company: "Mi guía Catamarca",
+    link: "https://github.com/Frlawer/miguiacatamarca/tree/master",
+    description:
+    "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
+    img:"/miguiacatamarca.webp",
   },
 ];
 
 ---
+<h3 class="text-5xl font-bold mb-12 ">
+  Mira Mis <br /><span class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent">Proyectos</span>.
+</h3>
 
 <ol class="relative border-s border-gray-200 dark:border-gray-700">
   {
     EXPERIENCE.map((experience) => (
       <li class="mb-10 ms-8">
-        <ExperienceItem {...experience} />
+        <ExperienceItem {...experience}/>
       </li>
     ))
   }
