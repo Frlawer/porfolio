@@ -3,53 +3,48 @@ import ExperienceItem from "../components/ExperienceItem.astro";
 
 const EXPERIENCE = [
   {
+    date: "2016 - Actualidad",
+    title: "Desarrollador Web Autónomo",
+    company: "Frlawer",
+    link: "http://linkedin.com/in/frandir",
+    description:
+      "Me dedico al desarrollo web desde 2016 de manera freelance, iniciando con proyectos personales y luego con clientes de la ciudad de San Fernando del Valle de Catamarca. Actualmente me encuentro trabajando en proyectos de manera remota para clientes de Argentina y el exterior. Me especializo en el desarrollo de aplicaciones web con HTML, CSS, Javascript, TailwindCSS, ReactJS, Git, entre otras tecnologías para el Frontend; y con Php, Laravel, Mysql, NodeJS, Next.js, para el Backend.",
+    img: "/Logo Frlawer.webp",
+  },
+  {
     date: "Agosto 2023",
     title: "Desarrollo ReactJS, Laravel, TailwindCSS",
     company: "Unco Activa",
     link: "https://github.com/Unco-Activa/Unco-Activa",
     description:
-    "Desarrollo de aplicacion web con ReactJS para el frontend, creación de componentes para registro de los participantes con pago a través de boton de Mercado Pago, HTML, CSS, TailwindCSS, Material UI, Git,  entre otras tecnologías.",
-    img:"/uncoactiva.webp",
+      "Desarrollo de aplicacion web con ReactJS para el frontend, creación de componentes para registro de los participantes con pago a través de boton de Mercado Pago, HTML, CSS, TailwindCSS, Material UI, Git,  entre otras tecnologías.",
+    img: "/uncoactiva.webp",
   },
   {
-    date: "Febrero 2023",
-    title: "Desarrollo web HTML, CSS, Javascript",
-    company: "La Bajada del Cacique",
-    link: "https://www.labajadadelcacique.com.ar/",
-    description:
-    "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
-    img:"/labajadadelcacique.webp",
-  },
-  {
-    date: "Agosto 2020",
-    title: "Desarrollo Frontend",
-    company: "Gatti Electrónica",
-    link: "https://www.gattielectronica.com.ar/",
-    description:
-    "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
-    img:"/gattielectronica.webp",
-  },
-  {
-    date: "Diciembre 2018",
-    title: "Desarrollo Fullstack | PHP plano, HTML, CSS, Javascript (Jquery), Mysql",
+    date: "2020",
+    title:
+      "Desarrollo Fullstack | PHP plano, HTML, CSS, Javascript (Jquery), Mysql",
     company: "Mi guía Catamarca",
     link: "https://github.com/Frlawer/miguiacatamarca/tree/master",
     description:
-    "Desarrollo de aplicaciones web con ReactJS, Redux, Typescript, Jest, React Testing Library, HTML, CSS, SASS, TailwindCSS, Material UI, Styled Components, Storybook, Git, Gitlab, Jira, Confluence, Bitbucket, Docker, AWS, Azure, Firebase, Google Cloud, Heroku, Netlify, Vercel, entre otras tecnologías.",
-    img:"/miguiacatamarca.webp",
+      "Desarrollo de sitio web para el registro de empresas locales con selección de ubicación y muestra en Google maps mediante geolocalización o coordenadas, incorporación de imágenes, resaltado de destacados, banners de publicaciones destacadas tipo publicidad.",
+    img: "/miguiacatamarca.webp",
   },
 ];
-
 ---
-<h3 class="text-5xl font-bold mb-12 ">
-  Mira Mis <br /><span class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent">Proyectos</span>.
+
+<h3 class="text-5xl font-bold mb-12">
+  Mi <br /><span
+    class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent"
+    >Experiencia</span
+  >.
 </h3>
 
 <ol class="relative border-s border-gray-200 dark:border-gray-700">
   {
     EXPERIENCE.map((experience) => (
       <li class="mb-10 ms-8">
-        <ExperienceItem {...experience}/>
+        <ExperienceItem {...experience} />
       </li>
     ))
   }

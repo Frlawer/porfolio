@@ -31,14 +31,17 @@ const { title, description, date, company, link, img } = Astro.props;
   class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
   >{date}</time
 >
-<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-  {description}
-</p>
+<div class="lg:flex">
 
-{img &&
-  <img
-  class="w-1/3 h-48 object-fill rounded-lg shadow-lg"
-  src={img}
-  alt=`Web de ${company}, por Fran`
-  />
-}
+  <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-balance">
+    {description}
+  </p>
+  
+  {img &&
+    <img
+    class="object-fill rounded-lg shadow-lg sm:w-full sm:h-auto lg:w-1/2 lg:h-48"
+    src={img}
+    alt=`Web de ${company}, por Fran`
+    />
+  }
+</div>
