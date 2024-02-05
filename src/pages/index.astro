@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Design from "../components/Design.astro";
+import Presentacion from "../components/Presentacion.astro";
+import Tecnologies from "../components/Tecnologies.astro";
+import Proyectos from "../components/Proyectos.astro";
+---
+
+<Layout title="Francisco - Desarrollador Fullstack" description="">
+  <main class="px-4">
+    <SectionContainer id="sobre-mi" class="pt-10">
+      <Presentacion />
+    </SectionContainer>
+
+    <SectionContainer id="todo" id="sobre-mi">
+      <h1 class="text-5xl font-bold pb-28 text-balance">
+        Diseño web que trasciende, impulsando el <span
+          class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent"
+          >éxito digital</span
+        >.
+      </h1>
+      <Design />
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <Experience class="" />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h3 class="text-5xl font-bold mb-12">
+        Descubre mis <br /><span
+          class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent"
+          >Proyectos</span
+        >.
+      </h3>
+      <Proyectos />
+    </SectionContainer>
+
+    <SectionContainer id="tecnologias">
+      <h3 class="text-5xl font-bold mb-12 flex justify-center">
+        <span class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent">Tecnologías</span>&nbsp;que utilizo.
+      </h3>
+      <Tecnologies />
+    </SectionContainer>
+  </main>
+</Layout>

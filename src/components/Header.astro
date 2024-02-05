@@ -1,0 +1,25 @@
+---
+import SocialPill from "./SocialPill.astro";
+import WhatsappIcon from "../icons/WhatsappIcon.astro";
+---
+
+<header class="
+  flex justify-evenly items-center flex-wrap 
+  top-0 py-10 mx-auto 
+  w-full xl:[1120px] 
+  z-10
+">
+  <nav class="flex flex-row gap-x-10">
+    <a href="#experiencia" class="transition">Experiencia</a>
+    <a href="#proyectos" class="transition">Proyectos</a>
+    <a href="#tecnologias" class="transition">Tecnologías</a>
+  </nav>
+
+  <SocialPill
+    href="https://wa.me/542995135074?text=Miré%20tu%20Porfolio,%20Necesitamos%20hablar.!"
+    class="py-3 sm:my-4 mt-4"
+  >
+    <WhatsappIcon class="size-6" />
+    Necesitamos hablar.!
+  </SocialPill>
+</header>

@@ -1,0 +1,21 @@
+---
+import ArrowUpR from "../icons/ArrowUpR.astro";
+const { link } = Astro.props;
+---
+
+<a class="
+hover:transition-all
+" href={link}>
+<li
+  class="
+    border-b-2 hover:border-transparent
+    hover:bg-gradient-to-r hover:from-violet-600 hover:to-orange-400
+    py-10
+    "
+  >
+    <h2 class="flex items-center justify-between text-6xl font-bold text-slate-300 hover:text-white">
+      <span><slot /></span>
+      <ArrowUpR />
+    </h2>
+  </li>
+</a>
