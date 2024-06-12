@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+import bajadaCacique from "../images/clients/bajada-cacique.avif";
+import biokairos from "../images/clients/biokairos.avif";
+import borgoArquitectura from "../images/clients/borgo-arquitectura.avif";
+import catamarcaRural from "../images/clients/catamarca-rural.avif";
+import colvet from "../images/clients/colvet.avif";
+import deporteCentral from "../images/clients/deporte-central.avif";
+import fdsRadio from "../images/clients/fds-radio.avif";
+import fnv from "../images/clients/federacion-neuquina-voleibol.avif";
+import ferivo from "../images/clients/federacion-rio-negro-voleibol.avif";
+import gattiElectronica from "../images/clients/gatti-electronica.avif";
+import gigantesDelSur from "../images/clients/gigantes-del-sur.avif";
+import gtc from "../images/clients/gtc.avif";
+import juanaMatilda from "../images/clients/juana-matilda.avif";
+import metalurgicaHuincul from "../images/clients/metalurgica-huincul.avif";
+import miguiaCat from "../images/clients/miguiacat.avif";
+import misionSaludPatagonia from "../images/clients/mision-salud-patagonia.avif";
+import nqnLeds from "../images/clients/nqnleds.avif";
+import pintureriaMitre from "../images/clients/pintureria-mitre.avif";
+import radiovalleviejo from "../images/clients/radiovalleviejo.avif";
+import uncoActiva from "../images/clients/unco-activa.avif";
+import yokavil from "../images/clients/yokavil.avif";
+
+
+import ImagesClients from "./ImagesClients.astro";
+
+interface Imagenes {
+    imgAlt: string;
+    imgSrc: string;
+}
+const images = [
+  {imgAlt: 'Bajada Cacique', imgSrc: bajadaCacique},
+  {imgAlt: 'Biokairos', imgSrc: biokairos},
+  {imgAlt: 'Borgo Arquitectura', imgSrc: borgoArquitectura},
+  {imgAlt: 'Catamarca Rural', imgSrc: catamarcaRural},
+  {imgAlt: 'Colvet', imgSrc: colvet},
+  {imgAlt: 'Deporte Central', imgSrc: deporteCentral},
+  {imgAlt: 'FDS Radio', imgSrc: fdsRadio},
+  {imgAlt: 'Federación Neuquina de Voleibol', imgSrc: fnv},
+  {imgAlt: 'Federación Rionegrina de Voleibol', imgSrc: ferivo},
+  {imgAlt: 'Gatti Electrónica', imgSrc: gattiElectronica},
+  {imgAlt: 'Gigantes del Sur', imgSrc: gigantesDelSur},
+  {imgAlt: 'GTC', imgSrc: gtc},
+  {imgAlt: 'Juana Matilda', imgSrc: juanaMatilda},
+  {imgAlt: 'Metalúrgica Huincul', imgSrc: metalurgicaHuincul},
+  {imgAlt: 'Mi Guía Cat', imgSrc: miguiaCat},
+  {imgAlt: 'Misión Salud Patagonia', imgSrc: misionSaludPatagonia},
+  {imgAlt: 'Nqn Leds', imgSrc: nqnLeds},
+  {imgAlt: 'Pinturería Mitre', imgSrc: pintureriaMitre},
+  {imgAlt: 'Radio Valle Viejo', imgSrc: radiovalleviejo},
+  {imgAlt: 'Unco Activa', imgSrc: uncoActiva},
+  {imgAlt: 'Yokavil', imgSrc: yokavil},
+  
+]
+---
+
+
+<div class="
+  grid gap-8 mx-auto 
+  lg:grid-cols-6 
+  md:grid-cols-3 
+  grid-cols-3 w-full
+  ">
+{images.map(image => (
+  <ImagesClients imgAlt={image.imgAlt} imgSrc={image.imgSrc} />  
+))}
+</div>
