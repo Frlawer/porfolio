@@ -38,15 +38,23 @@ const PROJECTS = [
     description:"Desarrollo de sitio web para Mi Guía Catamarca utilizando PHP, HTML, CSS, Javascript (Jquery) y Mysql. La plataforma incluye un panel de administración para gestionar empresas, categorías, usuarios, etc. Ofrece un buscador de empresas, un mapa interactivo de Catamarca, un blog y múltiples formularios de contacto, registro e inicio de sesión para usuarios y empresas, así como opciones específicas para publicidad, sugerencias, denuncias y consultas.",
     link: "https://github.com/Frlawer/miguiacatamarca/tree/master",
     github: "https://github.com/Frlawer/miguiacatamarca/tree/master",
-    image: "/miguiacatamarca.webp",
+    image: "/images/miguiacatamarca.webp",
     tags:[TAGS.PHP, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS, TAGS.MYSQL],
   },
+  {
+    title:"GTC Servicios",
+    description:"Desarrollo de sitio web para la empresa GTC Servicios. Utilizando AstroJs, TailwindCSS. El sitio web incluye un formulario de contacto, sección de misión, visión y valores, y finalmente una sección de servicios.",
+    link:"https://gtcservicios.netlify.app/",
+    github:"https://github.com/Frlawer/gtcWeb",
+    image:"/images/gtcweb.webp",
+    tags:[TAGS.PHP,TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+  }
 ];
 ---
 
 {
   PROJECTS.map(({ image, title, description, tags }) => (
-    <article>
+    <article class="mt-10">
       <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
         {title}
       </h3>
