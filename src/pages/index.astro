@@ -6,6 +6,7 @@ import Design from "../components/Design.astro";
 import Presentacion from "../components/Presentacion.astro";
 import Tecnologies from "../components/Tecnologies.astro";
 import Proyectos from "../components/Proyectos.astro";
+import Clients from "../components/Clients.astro";
 ---
 
 <Layout title="Francisco - Desarrollador Fullstack" description="">
@@ -43,6 +44,16 @@ import Proyectos from "../components/Proyectos.astro";
         <span class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent">Tecnologías</span>&nbsp;que utilizo.
       </h3>
       <Tecnologies />
+    </SectionContainer>
+    
+    <SectionContainer id="clientes">
+      <h3 class="text-5xl font-bold mb-12">
+        <span
+          class="bg-gradient-to-r from-violet-600 to-orange-400 bg-clip-text text-transparent"
+          >Clientes</span
+        > que confían en mí.
+      </h3>
+      <Clients />
     </SectionContainer>
   </main>
 </Layout>
