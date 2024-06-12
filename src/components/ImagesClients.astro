@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+const {
+  imgAlt,
+  imgSrc
+} = Astro.props;
+---
+
+<Image
+class="w-full rounded-xl"
+src={imgSrc}
+alt={imgAlt}
+format={"avif"}
+/>
